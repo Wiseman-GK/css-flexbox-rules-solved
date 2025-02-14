@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 40px;
 }
 
 h2 {
@@ -34,9 +36,37 @@ form {
   font-weight: unset;
 }
 
-#sign-in,
-#sign-up {
+#sign-in, #sign-up,
+#sign-up-form, #sign-in-form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.form-header, .form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  width: 420px;
+  height: 30px;
+  padding: 5px;
+}
+select:focus {
+  min-width: 420px;
+  width: auto;
+}
+
+.form-submit-control {
+  align-self: center;
 }
 
 a {
@@ -83,3 +113,7 @@ input[type="submit"]:hover {
 .form select {
   height: 30px;
 }
+
+.female, .male, .other, .stay-signed-in {
+  font-weight: normal;
+} 
